@@ -1,0 +1,40 @@
+{
+  "name": "@violacss/violacss.github.io",
+  "description": "The ViolaCSS website",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": "https://github.com/violacss/violacss.github.io.git",
+  "scripts": {
+    "build": ""
+  },
+  "author": {
+    "name": "Amir Hossein Abdolkhalegh",
+    "url": "https://twitter.com/amirhosseinab"
+  },
+  "keywords": [
+    "violacss",
+    "viola",
+    "website"
+  ],
+  "bugs": {
+    "url": "https://github.com/violacss/violacss.github.io/issues"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "commitizen": "^3.1.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^3.0.0",
+    "vuepress": "^1.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
