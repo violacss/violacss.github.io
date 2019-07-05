@@ -13,5 +13,6 @@ deploy:
   local_dir: docs/.vuepress/dist
   github_token: $GITHUB_TOKEN
   fqdn: violacss.com
+  target_branch: master
   on:
-    branch: master
+    branch: dev
