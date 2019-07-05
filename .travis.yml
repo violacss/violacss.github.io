@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - 'stable'
+script:
+  - build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: docs/.vuepress/dist
+  github_token: $GITHUB_TOKEN
+  fqdn: violacss.com
+  on:
+    branch: master
